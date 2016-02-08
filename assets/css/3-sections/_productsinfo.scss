@@ -4,10 +4,7 @@
 }
 .productsinfo{
     margin: 0 auto;
-}
-@media(max-width: 640px){
-    .productsinfo{
-}
+    @include outer-container;
 }
 
 .bullets {
