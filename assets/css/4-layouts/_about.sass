@@ -1,12 +1,9 @@
 .about
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    overflow: hidden
+    @extend .products
     
     article
         +outer-container
+        margin: 55px 0
     
     .mads
         background-image: url('/assets/img/sheep.jpg')
