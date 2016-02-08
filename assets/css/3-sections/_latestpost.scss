@@ -1,0 +1,16 @@
+.latestpost {
+    background: $post-background-color;
+    
+    .col-2{
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+}
+
+@media (max-width: 640px){
+    .latestpost{
+        .col-2{
+            padding: 40px 10px 15px;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Druesang",
+  "version": "1.0.0",
+  "description": "Vinsmaking som kombinerer god smak med fantastisk musikk. Sommelier Mads Skeie og gitarist Thomas Heimstad leverer.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thomas Heimstad",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gm": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "^2.6.0",
+    "gulp-image-resize": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "node-sass": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thomasheimstad/thomasheimstad.github.io/"
+  },
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "browsersync",
+    "imagemin",
+    "imageresize"
+  ],
+  "homepage": "https://github.com/thomasheimstad/thomasheimstad.github.io/"
+}

@@ -1,0 +1,31 @@
+<div class="cards firstcard">
+    {% for post in site.posts limit: 1 %}
+  <a class="card" href="{{post.url}}">
+    <div class="card-image" style="background-image: url(/assets/img/{{post.thumbnail}})">
+    </div>
+    <div class="card-header">
+      <h2>{{post.title}}</h2>
+        <time>{{post.date | date: "%b %d, %Y"}}</time>
+    </div>
+    <div class="card-copy">
+      <p>{{post.description}}</p>
+    </div>
+  </a>
+    {% endfor %}
+</div>
+
+<div class="cards">
+    {% for post in site.posts offset: 1 %}
+  <a class="card" href="{{post.url}}">
+    <div class="card-image" style="background-image: url(/assets/img/{{post.thumbnail}})">
+    </div>
+    <div class="card-header">
+      <h2>{{post.title}}</h2>
+        <time>{{post.date | date: "%b %d, %Y"}}</time>
+    </div>
+    <div class="card-copy">
+      <p>{{post.description}}</p>
+    </div>
+  </a>
+    {% endfor %}
+</div>

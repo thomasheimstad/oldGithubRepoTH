@@ -1,0 +1,28 @@
+---
+layout: default
+title: Produkter
+date: ''
+description: Her kan du lese om hvilke tjenester "Druesang" har &aring; tilby. 
+---
+
+<article class="products">
+
+    <div class="hero">
+        <div class="hero-inner">
+            <a href="/" class="hero-logo"><img src="/assets/img/logotrans.png" alt="Logo Image"></a>
+            <div class="hero-copy">
+            <h1>{{ page.title }}</h1>
+            <p>Vin og sang kan kombineres p&aring; mange m&aring;ter. Velg hvilket produkt som passer til ditt arrangement. Vi legger vekt p&aring; f&oslash;lgende egenskaper:</p>	
+            </div>
+        </div>
+    </div>
+    
+    {% include productsinfo.html %}
+    
+    {% include products1.html %}
+    {% include products2.html %}
+    {% include products3.html %}
+    
+    {% include productsdisclaimer.html %}
+    
+</article>

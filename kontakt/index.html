@@ -1,0 +1,39 @@
+---
+layout: default
+title: Kontakt
+date: ''
+description: Ta kontakt p&aring; mail eller telefon og bestill din neste vinsmaking med "Druesang".
+---
+<article class="contact">
+    
+<div class="hero">
+	<div class="hero-inner">
+    <a href="/om/" class="hero-logo"><img src="/assets/img/logotrans.png" alt="Logo Image"></a>
+		<div class="hero-copy">
+			<h1>{{ page.title }}</h1>
+			<p>{{ page.description }}</p>
+            
+            <h2><script type="text/javascript">
+                        var navn = "post";
+                        var adresse = "druesang.no";
+                    
+document.write('<a href="mailto:'+navn + '@' + adresse+'">'+navn + '@' + adresse+'</a>');
+                    </script></h2>
+            
+            <h2><script type="text/javascript">
+                        var land = "+47";
+                        var nummer = "46886265";
+                        var nummermellomrom = "46 88 62 65";
+document.write('<a href="tel:'+land + nummer+'">'+land + ' ' + nummermellomrom+'</a>');
+                    </script></h2>
+            
+            
+		</div>
+	</div>
+</div>
+
+    {% include contact.html %}
+    
+<script src="/assets/js/lightbox-plus-jquery.min.js"></script>
+    
+</article>

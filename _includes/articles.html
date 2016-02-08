@@ -1,0 +1,31 @@
+<div class="articles">
+    <div class="flex flexcenter">
+        <div class="col-50">
+            <div class="article-wrap">
+                {% for post in site.posts limit: 12 %}
+                <a href="{{post.url}}" style="background-image:url(assets/img/{{post.thumbnail}})" class="article-thumb">
+                    <div class="article-meta">
+                        <div class="name">
+                            {{post.title}}
+                        </div>
+
+                        <div class="date">
+                            {{post.date | date: "%b %d, %Y"}}
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    
+        <div class="col-50 flex flexcenter order-first">
+            <div class="col-1">
+                <div class="desc-wrap">
+                    <p class="home-lead outdented">...les mer om v&aring;re opplevelser
+                    </p>
+                    <a href="/arkivet/" class="home-cta">Blogarkivet</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

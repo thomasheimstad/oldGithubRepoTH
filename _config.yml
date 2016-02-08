@@ -1,0 +1,30 @@
+name: Druesang
+sass:
+  sass_dir: assets/css
+  style: compressed
+excerpt_separator: "<!--more-->"
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+prose:
+  media: 'assets/img'
+  metadata:
+    _posts:
+        
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+          
+      - name: "thumbnail"
+        field:
+          element: "text"
+          label: "Thumbnail file name"
+          
+      - name: "description"
+        field:
+          element: "text"
+          label: "En kort beskrivelse innlegg"

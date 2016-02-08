@@ -1,0 +1,14 @@
+.products{
+    @extend .archive;
+    .side-image-content h1{
+        color: $button-background-color;
+    }
+}
+.productsinvert{
+    background: $footer-background-color;
+    
+    .side-image-content p
+    {
+        color: gray;
+    }
+}
