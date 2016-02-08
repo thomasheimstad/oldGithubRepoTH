@@ -7,7 +7,7 @@
   $side-image-background-top: #B5EBEB;
   $side-image-background-bottom: #5DAC5D;
   $side-image-content-background: #F9F9F9;
-  $side-image-border: 0px solid darken(transparentize($side-image-background-bottom, 0.8), 30%);
+  $side-image-border: 1px solid darken(transparentize($side-image-background-bottom, 0.8), 30%);
 
   background: $side-image-content-background;
 
