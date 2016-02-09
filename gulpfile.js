@@ -63,7 +63,7 @@ gulp.task('sass', function () {
 // resize and compress 
 
 gulp.task('images', function () {
-  gulp.src('img/*')
+  gulp.src('_img/*')
     .pipe(imageResize({ 
         width : 1920,
         filter: 'catrom'

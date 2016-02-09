@@ -1,5 +1,6 @@
 _site
 .idea
+_img
 node_modules
 # Created by https://www.gitignore.io/api/jekyll,sass,osx
 
