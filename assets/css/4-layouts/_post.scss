@@ -6,7 +6,7 @@
     background: $post-background-color;
     
     article{
-        padding: 100px 0 0;
+        padding: 100px 0;
         
         .author::before{
             content: "Skrevet av: "; 
@@ -40,6 +40,7 @@
     .post{
         article{
             padding-top: 50px;
+            padding-bottom: 50px;
         }
     }
 }
