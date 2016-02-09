@@ -2,10 +2,11 @@
 layout: post
 thumbnail: marker.jpg
 description: The marking of your territory
-published: false
+published: true
 title: The marker
 author: Statens kartverk
 ---
+
 
 Mark your territory!
 
@@ -22,4 +23,3 @@ Aliquam nec nisl vitae massa viverra tincidunt. Duis leo magna, tincidunt sit am
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur in iaculis mauris.
 
 ![Mark your stuff!]({{site.baseurl}}/assets/img/marker.jpg)
-
