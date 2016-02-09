@@ -2,10 +2,11 @@
 layout: post
 thumbnail: boat.jpg
 description: A short post about beautiful and calm boats on the water
-published: false
+published: true
 title: Calm boats
 author: Thomas Druesang
 ---
+
 
 Calm boats in the mountains.
 
