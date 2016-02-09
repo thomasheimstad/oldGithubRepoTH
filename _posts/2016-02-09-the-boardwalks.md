@@ -1,6 +1,6 @@
 ---
 layout: post
-thumbnail: boarwalk2.jpg
+thumbnail: boardwalk2.jpg
 description: Beautiful boardwalks in the forrest
 published: true
 title: The boardwalks
