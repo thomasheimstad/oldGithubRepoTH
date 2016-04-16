@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-$("article img:gt(1)").hide();
+//$("article img:gt(1)").hide();
 
         
         lightbox.option({
