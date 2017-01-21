@@ -7,7 +7,7 @@ export default class Nav extends React.Component{
     return (
       <nav class={this.props.showNav ? 'showing navigator' : 'hidden navigator'}>
         <div>
-          <span class="logo"><img src="./img/rtlogo.png" /></span>
+          <span class="logo"><img src="./img/rtlogo.png" /></img></span>
           <ul>
             <li onClick={this.props.handleClick}><Link to="/"><MdHome /> Home</Link></li>
             <li onClick={this.props.handleClick}><Link to="/gallery" activeClassName="active"><MdHome />Bilder</Link></li>
