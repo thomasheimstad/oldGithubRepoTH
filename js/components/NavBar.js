@@ -26,7 +26,7 @@ export default class NavBar extends React.Component{
         <div class={`mainNavBar ${this.state.invis}`}>
           <div class="mainNavBarHeader">
               <a onClick={this.props.handleClick}><MdMenu /></a>
-              <Link to="/"><img src="./img/RTlogo.png" /></Link>
+              <Link to="/"><img src="./img/rtlogo.png" /></Link>
               <a href="https://www.facebook.com/groups/245179519191541/"><MdFace /></a>
           </div>
         </div>
