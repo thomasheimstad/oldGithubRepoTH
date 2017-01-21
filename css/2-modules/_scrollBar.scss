@@ -1,0 +1,14 @@
+.scrollBar {
+  position: fixed;
+  background-color: $action-color;
+  height: 1px;
+  border-radius: 1px;
+  transition: all .3s ease-out;
+  z-index: 4;
+}
+.warning {
+  background: black;
+}
+.safe {
+  background: white;
+}

@@ -1,0 +1,19 @@
+.homeHero {
+  height: 100vh;
+  background: url('/img/pinecone2.jpg');
+  background-size: cover;
+  background-position: bottom right;
+  background-attachment: fixed;
+  div {
+    a {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    }
+  }
+  .overcast {
+    height: 100%;
+    width: 100%;
+    background-color: $black;
+  }
+}

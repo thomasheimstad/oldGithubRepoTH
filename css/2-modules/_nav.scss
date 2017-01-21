@@ -1,0 +1,123 @@
+.mainNavBar {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  transition: 0.5s;
+  font-weight: 100;
+  .mainNavBarHeader {
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      padding: 0.5rem;
+      margin: 0;
+      cursor: pointer;
+      text-align: center;
+      color: $action-color;
+      font-size: 20px;
+      line-height: 1;
+      img{
+        height: 2.5rem;
+      }
+      &:hover {
+        color: $navigation-color-hover;
+      }
+    }
+  }
+}
+.navigator {
+  z-index: 100;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  .logo {
+    display: block;
+    border-bottom: 1px solid #e0e0e0;
+    height: 64px;
+    padding: 12px 0 11px 24px;
+    img {
+      height: 40px;
+    }
+  }
+  div {
+    height: 100%;
+    width: 240px;
+    background: $navigation-background;
+    overflow: hidden;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+    transform: translateZ(0);
+    transform-style: preserve-3d;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+    transition-property: transform, left;
+    ul {
+      padding: 12px 0 10px 0;
+    }
+    ul li {
+      font-size: 13px;
+      color: $navigation-color;
+      font-weight: 400;
+      svg {
+        font-size: 20px;
+        margin-bottom: 3px;
+      }
+      a {
+        padding: 15px 22px;
+        display: block;
+        border-left: 2px solid transparent;
+        &:hover {
+          color: $navigation-color-hover;
+          background: $navigation-background-color-hover;
+        }
+      }
+    }
+    .active {
+      color: $action-color;
+    }
+  }
+}
+.hidden {
+  transform: translateX(-241px);
+  left: -241px;
+  transition: 300ms ease-out;
+}
+.showing {
+  transform: translateX(0);
+  left: 0;
+  transition: $base-timing $base-duration;
+}
+.overlay {
+  top: 0;
+  position: fixed;
+  transition: $base-timing $base-duration;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 99;
+}
+.overlayOut {
+  top: 0;
+  position: fixed;
+  transition: 300ms ease-out;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+@media (max-width: 640px){
+  .mainNavBar {
+    div ul {
+      justify-content: space-between;
+    }
+    div ul li a {
+      padding: 1.5rem 0;
+    }
+    div ul li {
+      width: 100%;
+      font-size: .8rem;
+      letter-spacing: 2px;
+    }
+  }
+  .hidden {
+  }
+}

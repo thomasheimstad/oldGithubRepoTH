@@ -1,0 +1,22 @@
+.homeArticle{
+  display: inline-block;
+  width: 100%;
+  .homeArticleBackground {
+    > div {
+      max-width: 68em;
+      margin: 0 auto;
+      article {
+      margin: 0 auto;
+      max-width: 70%;
+      padding: 10% 0;
+        p, h1, h2, h3, .date, a {
+
+        }
+        code {
+          background-color: $secondary-background-color;
+          border: 0;
+        }
+      }
+    }
+  }
+}

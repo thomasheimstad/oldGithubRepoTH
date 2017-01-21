@@ -1,0 +1,15 @@
+.visible {
+  background: rgba($navigation-background, 1);
+  box-shadow: 0 1px 10px $gray;
+}
+.invisible {
+  background: rgba($navigation-background, 0.0001);
+}
+.fadeIn {
+  transition: 0.5s ease-in;
+  opacity: 1;
+}
+.fadeOut {
+  transition: 0.335s ease-out;
+  opacity: 0;
+}

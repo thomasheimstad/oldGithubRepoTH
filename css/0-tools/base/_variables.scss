@@ -1,0 +1,108 @@
+// Typography
+$base-font-family: 'Open sans', sans-serif;
+$heading-font-family: 'Raleway', sans-serif;
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$blue: #1565c0;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+$aqua:  #7FDBFF;
+$blue:  #0074D9;
+$navy:  #001F3F;
+$teal:  #39CCCC;
+$green: #2ECC40;
+$olive: #3D9970;
+$lime:  #01FF70;
+$yellow:  #FFDC00;
+$orange:  #FF851B;
+$red:     #FF4136;
+$fuchsia: #F012BE;
+$purple:  #B10DC9;
+$maroon:  #85144B;
+$white:  #fff;
+$silver: #ddd;
+$gray:   #aaa;
+$gray2: #ebebeb;
+$black:  #111;
+$blue-asphalt: #1b374e;
+$light-blue: #e9f5ea;
+$bluegray: #6FA49C;
+$beige: #FCE7B8;
+$beige2: #FFE6C3;
+$beige3: #FFF8DC;
+$milkchocolate2: #7A4928;
+$milkchocolate: #542300;
+$fefd: #FDFEFD;
+$dark-navy: #00152E;
+$purple2: #2D1231;
+$peach: #C48D78;
+$pink: #FF858F;
+$bley: #B0D2D8;
+$greengrey: #444A34;
+$purpish: #5C544E;
+$mint: #9BAD8B;
+$rtblue: #023a78;
+
+// Font Colors
+$base-font-color: $dark-navy; /*$dark-gray;*/
+$secondary-font-color: $fefd;
+$navigation-color: $gray;
+$navigation-color-hover: darken($navigation-color, 15%);
+
+$h1: $fefd;
+
+$post-color:        $navy;
+$post-header-color: $navy;
+
+$calendar-font-color: $secondary-font-color;
+
+$action-color:  $rtblue;
+$secondary-action-color: $beige;
+$footer-color: whitesmoke;
+
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+
+
+// Background Colors
+$base-background-color: $fefd; /*#fff;*/
+$secondary-background-color: $black;
+$navigation-background: $fefd;
+$navigation-background-color-hover: darken($navigation-background, 2%);
+
+$articles-background-color: $blue-asphalt;
+$archive-background-color: $beige;
+
+$calendar-background-color: $secondary-background-color;
+
+$products-background-color: $archive-background-color;
+
+$button-background-color: $action-color;
+
+$footer-background-color: $base-background-color;
+
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 300ms;
+$base-timing: ease-in;
