@@ -3,37 +3,32 @@ import { Link } from 'react-router';
 
 export default class Footer extends React.Component {
   render = () => {
-    let footerAboutNo = "Dobbeltgjenger er et amazing bergensband som satster stort";
-    let footerAboutEn = "Dobbeltgjenger is an awesome band which continues to amaze the audiences of the world!";
     return (
       <footer class="footer">
         <div class="col6">
-          <img class="footer-logo" src="../img/logo.jpg"></img>
-          <h3>{this.props.lang === "no" ? footerAboutNo : footerAboutEn}</h3><br/><br/>
-          <p>&copy; Copyright 2017 Dobbeltgjenger</p>
+          <h2>ROUND TABLE BERGEN</h2>
+          <h3>Round Table er en organisasjon for menn i alderen 20-40 år. Vi er politisk og religiøst uavhengige og ønsker en bred sammensetning av medlemmer på tvers av yrkesgrupper og økonomisk og kulturell bakgrunn.</h3><br/><br/>
+          <p>&copy; Copyright 2017 Round Table 1 Bergen</p>
         </div>
         <div class="col2">
-          <h2>Navigate</h2>
+          <h2>Naviger</h2>
           <ul class="flex column">
             <Link to="/"><p>Hjem</p></Link>
-            <a href="#"><p>Calendar</p></a>
-            <a href="#"><p>Info</p></a>
+            <Link to="/charterfest"><p>70-årsjubileum</p></Link>
           </ul>
         </div>
         <div class="col2">
-          <h2>Booking</h2>
+          <h2>Kontakt</h2>
           <ul class="flex column">
-            <a href="#"><p>Email</p></a>
-            <a href="#"><p>Facebook</p></a>
-            <a href="#"><p>999 88 777</p></a>
+            <a href="mailto:sekretær@rt1.no"><p>Email</p></a>
+            <a href="https://www.facebook.com/groups/245179519191541/"><p>Facebook</p></a>
           </ul>
         </div>
         <div class="col2">
-          <h2>Listen</h2>
+          <h2>Lenker</h2>
           <ul class="flex column">
-            <a href="#"><p>Spotify</p></a>
-            <a href="#"><p>iTunes</p></a>
-            <a href="#"><p>Youtube</p></a>
+            <a href="http://www.roundtable.no"><p>RT Nor</p></a>
+            <a href="http://rtinternational.org/"><p>RT Int</p></a>
           </ul>
         </div>
       </footer>

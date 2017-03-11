@@ -8,30 +8,22 @@ require('../../css/styles.scss');
 
 export default class Layout extends React.Component {
   state = {
-    showNav: false,
-    lang: "no"
+    showNav: false
   }
   handleClick = () => {
     this.setState({
       showNav: !this.state.showNav
     })
   }
-  handleLangClick = () => {
-    if(this.state.lang == "no"){
-      this.setState({lang: "en"})
-    } else if(this.state.lang == "en"){
-      this.setState({lang: "no"})
-    }
-  }
   render() {
     return (
       <div>
         <ScrollBar />
-        <NavBar showNav={this.state.showNav} handleClick={this.handleClick}/>
-        <Nav showNav={this.state.showNav} handleClick={this.handleClick} handleLangClick={this.handleLangClick} lang={this.state.lang}/>
+        <NavBar showNav={this.state.showNav} handleClick={this.handleClick} />
+        <Nav showNav={this.state.showNav} handleClick={this.handleClick} />
         <div class={this.state.showNav ? 'overlay' : 'overlayOut'} onClick={this.state.showNav ? this.handleClick : ''}></div>
-        {React.cloneElement(this.props.children, {lang: this.state.lang})}
-        <Footer lang={this.state.lang}/>
+          {this.props.children}
+        <Footer />
       </div>
     );
   }

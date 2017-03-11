@@ -1,0 +1,47 @@
+
+.homeOutro{
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  a {
+    &:hover {
+      color: $action-color;
+    }
+  }
+}
+.contactSosmed,
+.contactInfo {
+  height: 400px;
+  .overcast {
+    background: rgba(000,000,000,0.5);
+    @include pad(3%);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    transition: 0.2s ease-in;
+    &:hover {
+      transition: 0.2s ease-in;
+      background: rgba(250,250,250, 0.5);
+      color: $black;
+      p {
+        transition: 0.2s ease-in;
+        color: $black;
+      }
+    }
+    p {
+      transition: 0.2s ease-in;
+      color: whitesmoke;
+    }
+  }
+}
+.homeOutroImg{
+  height: 400px;
+  background: url('/img/thomasheimstadhallbw.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.homeOutroSosmed{
+  height: 400px;
+}

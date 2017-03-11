@@ -15,9 +15,11 @@ export default class FadeInWrapper extends React.Component {
   componentDidMount = () => {
     window.addEventListener('scroll', this.handleScroll);
     this.handleScroll();
+    window.onbeforeunload = 0;
   }
   componentWillUnmount = () => {
     window.removeEventListener('scroll', this.handleScroll);
+    window.onbeforeunload = 0;
   }
   render () {
     return (

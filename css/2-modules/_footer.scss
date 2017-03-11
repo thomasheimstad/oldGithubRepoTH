@@ -3,6 +3,7 @@
   font-size: 12px;
   overflow: hidden;
   background: $footer-background-color;
+
   .col6 {
     @include pad(2.5% 20% 2.5% 5%);
     @media screen and (max-width: 768px) {
@@ -17,7 +18,7 @@
       }
     }
   .col2 {
-    @include pad(5%);
+    @include pad(5% 2.5% 5% 5%);
     p {
       margin: 3px 0;
     }

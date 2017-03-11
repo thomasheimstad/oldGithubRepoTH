@@ -2,7 +2,7 @@
   background: $base-background-color;
 }
 .imageGallery {
-  padding-bottom: 5%;
+  width: 100%;
   .col6 {
     height: 345px;
   }
@@ -18,15 +18,16 @@
       background: $black;
       height: 100%;
       width: 100%;
-      opacity: 0;
+      opacity: 0.7;
       transition: 0.2s ease-in;
       color: whitesmoke;
       p {
-        color: whitesmoke;
+        color: $white;
+        font-weight: 700;
         padding: 0 10%;
       }
       &:hover {
-        opacity: .6;
+        opacity: 0.8;
       }
       div {
         height: 100%;
@@ -42,16 +43,20 @@
       font-size: 30px;
     }
     &:first-child{
-      filter: grayscale(100%);
+      filter: grayscale(0);
+      &:hover {
+        filter: grayscale(100%);
+      }
       .overcast {
         background: rgba(0, 0, 0, 1);
         opacity: .5;
         &:hover {
-          opacity: .1;
+          opacity: .8;
         }
       }
     }
-    &:last-child{
+    &:nth-child(2){
+      background-color: $mint;
       &:hover {
         filter: grayscale(0);
         }

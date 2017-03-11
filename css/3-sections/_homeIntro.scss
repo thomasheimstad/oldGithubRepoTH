@@ -1,0 +1,20 @@
+.homeIntro {
+  height: 400px;
+  background: $gray2;
+  .img {
+    background: url('/img/pinecone.jpg');
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .welcome{
+    height: 400px;
+  }
+  h2 {
+    @extend h1;
+  }
+  h3 {
+    @extend h2;
+  }
+}

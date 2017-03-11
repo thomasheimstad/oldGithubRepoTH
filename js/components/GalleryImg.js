@@ -7,12 +7,13 @@ export default class GalleryImg extends React.Component {
     }
     return (
       <div class="col6 galleryImg" style={imgStyle} alt={this.props.alt} >
-        <a href={this.props.blog}><div class="overcast overcast2">
+        <div class="overcast overcast2">
           <div class="flex center column">
             <h3>{this.props.title}</h3>
             <p>{this.props.alt}</p>
+            {this.props.children}
           </div>
-        </div></a>
+        </div>
       </div>
     )
   }

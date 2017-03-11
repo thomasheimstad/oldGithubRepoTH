@@ -1,0 +1,18 @@
+.galleryIntro {
+  background: url('/img/thomasheimstadhallbw.jpg');
+  color: $secondary-font-color;
+  background-position: center;
+  > div {
+    height: 100%;
+    width: 100%;
+    background: rgba($navy, 0.5);
+  }
+  p {
+    color: $secondary-font-color;
+  }
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+  }
+}

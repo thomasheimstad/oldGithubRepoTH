@@ -1,11 +1,29 @@
 import React from 'react';
-import HomeHeroContent from '../components/HomeHeroContent';
+
+export default class HomeButton extends React.Component {
+  state = {
+    load: false
+  }
+  componentDidMount = () => {
+    setTimeout(() => {
+      this.setState({
+        load: true
+      })
+    }, 2000)
+  }
+  render = () => {
+    return (
+      <div class="flex center">
+      </div>
+    )
+  }
+}
 export default class HomeHero extends React.Component {
   render = () => {
     return (
-      <div class="homeHero flex" id="homeHero">
-        <div class="overcast" style={{ opacity: this.props.percent }}></div>
-        <HomeHeroContent lang={this.props.lang}/>
+      <div class="homeHero" id="homeHero">
+        <HomeButton scrolled={this.props.scrolled} />
+        <div class="overcast" style={{ opacity: this.props.percent*3 }}></div>
       </div>
     )
   }

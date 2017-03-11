@@ -1,23 +1,15 @@
 import React from "react";
-// require scss to load inline load above the fold
 require('../../css/3-sections/_homeHero.scss');
 import HomeHero from '../components/HomeHero';
-import HomeBullets from '../components/HomeBullets';
-import HomeQuotes from '../components/HomeQuotes';
-import HomeTestimonials from '../components/HomeTestimonials';
-import TimeCalc from '../components/TimeCalc';
+import HomeArticle from '../components/HomeArticle';
+import HomeJoin from '../components/HomeJoin';
+import HomeCharterfest from '../components/HomeCharterfest';
 import FadeInWrapper from '../components/FadeInWrapper';
 
 export default class Home extends React.Component {
   state = {
     scrolled: 0,
-    percent: 0,
-  }
-  componentDidMount = () => {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-  componentWillUnmount = () => {
-    window.removeEventListener('scroll', this.handleScroll);
+    percent: 0
   }
   handleScroll = () => {
     let scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0 ;
@@ -27,14 +19,27 @@ export default class Home extends React.Component {
       percent: percentz
     })
   }
+  componentDidMount = () => {
+    window.addEventListener('scroll', this.handleScroll);
+    window.onbeforeunload = 0;
+  }
+  componentWillUnmount = () => {
+    window.removeEventListener('scroll', this.handleScroll);
+    window.onbeforeunload = 0;
+  }
   render = () => {
     return (
       <div class="homeWrap flex column">
-        <TimeCalc />
-        <HomeHero scrolled={this.state.scrolled} percent={this.state.percent} lang={this.props.lang} />
-        <HomeBullets lang={this.props.lang}/>
-        <HomeQuotes />
-        <HomeTestimonials />
+        <HomeHero scrolled={this.state.scrolled} percent={this.state.percent} />
+        <FadeInWrapper id="HomeArticle">
+          <HomeArticle />
+        </FadeInWrapper>
+        <FadeInWrapper id="HomeCharterfest">
+          <HomeCharterfest />
+        </FadeInWrapper>
+        <FadeInWrapper id="HomeJoin">
+          <HomeJoin />
+        </FadeInWrapper>
       </div>
     );
   }

@@ -1,0 +1,53 @@
+.AAI {
+  a {
+    &:hover div {
+      color: $gray2;
+      background-color: $gray;
+    }
+    div p {
+      transition: 0.3s ease-in;
+    }
+    &:hover div p {
+      color: $gray2;
+    }
+  }
+  padding: 0;
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .adimp {
+    padding: 5em 4rem;
+    transition: 0.3s ease-in;
+    min-height: 20rem;
+    flex: 1;
+    @media screen and (max-width: 768px){
+      width: 100%;
+    }
+    svg{
+      font-size: 50px;
+    }
+    h2 {
+      padding-top: 1rem;
+    }
+    p {
+      text-align: justify;
+      font-size: 14px;
+    }
+  }
+  .adopt{
+    color: $red;
+    background: $formheader;
+  }
+  .adapt{
+    background: $purpish;
+    color: $yellow;
+    p {
+      color: $secondary-font-color;
+    }
+  }
+  .improve {
+    background: $light-blue;
+    color: $green;
+  }
+}
