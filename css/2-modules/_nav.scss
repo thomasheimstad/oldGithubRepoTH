@@ -66,6 +66,8 @@
         padding: 15px 22px;
         display: block;
         border-left: 2px solid transparent;
+        cursor: pointer;
+        user-select: none;
         &:hover {
           color: $navigation-color-hover;
           background: $navigation-background-color-hover;

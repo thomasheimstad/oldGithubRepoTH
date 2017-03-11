@@ -1,0 +1,67 @@
+#form {
+  .hide {
+    visibility: none;
+    opacity: 0;
+    transition: 0.5s ease-in;
+    width: 0;
+  }
+  .show {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ease-in;
+    width: 100%;
+  }
+  .response {
+    width: 100%;
+  }
+  .loading {
+    background-color: $orange;
+  }
+  .finished {
+    background-color: $green;
+  }
+  .error {
+    background-color: $red;
+  }
+  h3 {
+    margin: 0;
+    color: $secondary-font-color;
+  }
+  input, textarea {
+    margin: 0;
+    padding: 0.8rem;
+    border-radius: 0;
+    box-shadow: 0;
+    color: $base-font-color;
+  }
+  input:focus {
+    box-shadow: 0;
+    border: 0;
+  }
+  input, textarea, select {
+    box-shadow: 0;
+    border: 0;
+    outline: none;
+  }
+  textarea {
+    padding: 0.8rem 0.8rem 7rem;
+  }
+  button {
+    border-radius: 0;
+    background: $white;
+    color: $green;
+    transition: 0.2s ease-in;
+    &:hover {
+      background: darken($white, 15%);
+      color: lighten($green, 15%);
+    }
+  }
+  .rotate {
+    animation: "Rotate 500ms infinite linear";
+  }
+  @keyframes Rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+
+}

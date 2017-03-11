@@ -6,10 +6,12 @@
   background: rgba($navigation-background, 0.0001);
 }
 .fadeIn {
+  height: 100%;
   transition: 0.5s ease-in;
   opacity: 1;
 }
 .fadeOut {
+  height: 100%;
   transition: 0.335s ease-out;
   opacity: 0;
 }

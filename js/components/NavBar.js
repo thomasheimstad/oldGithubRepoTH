@@ -7,27 +7,26 @@ export default class NavBar extends React.Component{
   state = {
     invis: "invisible"
   }
-  handleScroll = () => {
-    if(window.pageYOffset > 30|| document.documentElement.scrollTop > 30 || document.body.scrollTop > 30 || 0 > 30) {
-      this.setState({
-        invis: "visible"
-      })
-    } else {
-      this.setState({
-        invis: "invisible"
-      })
-    }
-  }
   componentDidMount = () => {
    window.addEventListener('scroll', this.handleScroll);
+ }
+ handleScroll = () => {
+   if(window.pageYOffset > 30|| document.documentElement.scrollTop > 30 || document.body.scrollTop > 30 || 0 > 30) {
+     this.setState({
+       invis: "visible"
+     })
+   } else {
+     this.setState({
+       invis: "invisible"
+     })
+   }
  }
   render = () => {
     return (
         <div class={`mainNavBar ${this.state.invis}`}>
           <div class="mainNavBarHeader">
               <a onClick={this.props.handleClick}><MdMenu /></a>
-              <Link to="/"><img src="./img/rtlogo.png"></img></Link>
-              <a href="https://www.facebook.com/groups/245179519191541/"><MdFace /></a>
+              <a href="#"><MdFace /></a>
           </div>
         </div>
       );

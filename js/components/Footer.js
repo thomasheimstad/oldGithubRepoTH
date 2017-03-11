@@ -3,23 +3,25 @@ import { Link } from 'react-router';
 
 export default class Footer extends React.Component {
   render = () => {
+    let footerAboutNo = "Dobbeltgjenger er et amazing bergensband som satster stort";
+    let footerAboutEn = "Dobbeltgjenger is an awesome band which continues to amaze the audiences of the world!";
     return (
       <footer class="footer">
         <div class="col6">
-          <img class="footer-logo" src="../img/rtlogo.png"></img>
-          <h3>Round Table er en organisasjon for menn i alderen 20-40 år. Vi er politisk og religiøst uavhengige og ønsker en bred sammensetning av medlemmer på tvers av yrkesgrupper og økonomisk og kulturell bakgrunn.</h3><br/><br/>
-          <p>&copy; Copyright 2017 Round Table 1 Bergen</p>
+          <img class="footer-logo" src="../img/logo.jpg"></img>
+          <h3>{this.props.lang === "no" ? footerAboutNo : footerAboutEn}</h3><br/><br/>
+          <p>&copy; Copyright 2017 Dobbeltgjenger</p>
         </div>
         <div class="col2">
-          <h2>Naviger</h2>
+          <h2>Navigate</h2>
           <ul class="flex column">
             <Link to="/"><p>Hjem</p></Link>
-            <Link to="/gallery"><p>Bilder</p></Link>
-            <Link to="/archive"><p>Info</p></Link>
+            <a href="#"><p>Calendar</p></a>
+            <a href="#"><p>Info</p></a>
           </ul>
         </div>
         <div class="col2">
-          <h2>Kontakt</h2>
+          <h2>Booking</h2>
           <ul class="flex column">
             <a href="#"><p>Email</p></a>
             <a href="#"><p>Facebook</p></a>
@@ -27,11 +29,11 @@ export default class Footer extends React.Component {
           </ul>
         </div>
         <div class="col2">
-          <h2>Lenker</h2>
+          <h2>Listen</h2>
           <ul class="flex column">
-            <a href="http://www.roundtable.no"><p>RT Nor</p></a>
-            <a href="http://rtinternational.org/"><p>RT Int</p></a>
-            <a href="https://en.wikipedia.org/wiki/Round_Table_(club)"><p>RT Wiki</p></a>
+            <a href="#"><p>Spotify</p></a>
+            <a href="#"><p>iTunes</p></a>
+            <a href="#"><p>Youtube</p></a>
           </ul>
         </div>
       </footer>

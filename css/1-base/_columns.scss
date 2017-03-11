@@ -1,8 +1,16 @@
 .col12 {
   @include span-columns(12);
-
   @media screen and (max-width: 768px){
     @include span-columns(12 of 12);
+  }
+}
+.col9 {
+  @include span-columns(9.125);
+  @include omega();
+
+  @media screen and (max-width: 768px){
+    @include span-columns(6 of 12);
+    margin: 0;
   }
 }
 .col6 {
@@ -11,6 +19,7 @@
 
   @media screen and (max-width: 768px){
     @include span-columns(12 of 12);
+    margin: 0;
   }
 }
 .col4 {
@@ -45,6 +54,9 @@
 }
 .column {
   flex-direction: column;
+}
+.row {
+  flex-direction: row;
 }
 .spaceBetween {
   justify-content: space-between;

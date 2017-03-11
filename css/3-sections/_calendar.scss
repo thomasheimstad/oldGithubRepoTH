@@ -3,7 +3,7 @@
   width: 100%;
   overflow: hidden;
   padding: 4rem 0;
-  @include pad(5% 15%);
+  @include pad(5% 25%);
   @media screen and (max-width: 768px) {
     @include pad(12% 5%);
   }

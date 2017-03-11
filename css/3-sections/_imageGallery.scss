@@ -2,10 +2,9 @@
   background: $base-background-color;
 }
 .imageGallery {
-
   padding-bottom: 5%;
   .col6 {
-    height: 400px;
+    height: 345px;
   }
   .galleryImg {
     background-size: cover;
@@ -24,15 +23,45 @@
       color: whitesmoke;
       p {
         color: whitesmoke;
+        padding: 0 10%;
       }
       &:hover {
         opacity: .6;
       }
+      div {
+        height: 100%;
+        width: 100%;
+        top: -100%;
+      }
     }
-    div {
-      height: 100%;
-      width: 100%;
-      top: -100%;
+  }
+}
+.charterfest {
+  .galleryImg {
+    h3 {
+      font-size: 30px;
+    }
+    &:first-child{
+      filter: grayscale(100%);
+      .overcast {
+        background: rgba(0, 0, 0, 1);
+        opacity: .5;
+        &:hover {
+          opacity: .1;
+        }
+      }
+    }
+    &:last-child{
+      &:hover {
+        filter: grayscale(0);
+        }
+      .overcast {
+        background: rgba(0, 0, 0, 1);
+        opacity: .5;
+        &:hover {
+          opacity: .8;
+        }
+      }
     }
   }
 }

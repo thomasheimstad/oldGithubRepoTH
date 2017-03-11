@@ -1,0 +1,55 @@
+.homeBullets {
+  background: $gray2;
+  padding: $base-padding;
+  @media screen and (max-width: 1120px) {
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 12%;
+  }
+  .bullet {
+    background: $base-background-color;
+    svg {
+      font-size: 50px;
+      margin-bottom: 25px;
+    }
+    width: 400px;
+    filter: grayscale(0);
+    transition: .2s ease;
+    text-align: center;
+    box-shadow: $base-box-shadow;
+    &:hover {
+      box-shadow: $base-box-shadow-hover;
+    }
+    @media screen and (max-width: 1120px) {
+      margin: 0 0 5%;
+    }
+    &:hover {
+      filter: grayscale(100%);
+    }
+    .overcast {
+      padding: 10%;
+      height: 100%;
+      width: 100%;
+      opacity: 1;
+      transition: 0.2s ease-in;
+      &:hover {
+        background: rgba(#111111, 0.15);
+      }
+      div {
+        height: 100%;
+        width: 100%;
+        top: -100%;
+      }
+    }
+  }
+  #bullet1 svg{
+    color: $dark-navy;
+  }
+  #bullet2 svg{
+    color: $yellow;
+  }
+  #bullet3 svg{
+    color: $green;
+  }
+}
