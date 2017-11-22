@@ -1,0 +1,9 @@
+.loader {
+  height: 100vh;
+  background: black;
+  width: 100%;
+  transition: $base-in-timing $base-in-duration;
+  transform: translate(0);
+  position: fixed;
+  z-index: 999999999;
+}

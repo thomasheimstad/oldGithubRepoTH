@@ -1,0 +1,12 @@
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  .overcast {
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+  }
+}

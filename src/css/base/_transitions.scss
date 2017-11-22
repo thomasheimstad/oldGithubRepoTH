@@ -1,0 +1,46 @@
+.invisible {
+  transform: translate3d(0,0,0);
+  opacity: 0;
+  transition: $base-out-duration $base-out-timing;
+}
+.visible {
+  transform: translate3d(0,0,0);
+  transition: $base-in-duration $base-in-timing;
+  opacity: 1;
+}
+.fade-enter {
+  transform: translate3d(0,0,0);
+  opacity: 0;
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+  transform: translate3d(0,0,0);
+  opacity: 1;
+  transition: opacity $base-in-duration $base-in-timing;
+}
+.fadeIn{
+  transform: translate3d(0,0,0);
+  transition: $base-out-timing $base-out-duration;
+  opacity: 1;
+  background: rgba(0,0,0,0);
+}
+.fadeOut {
+  transform: translate3d(0,0,0);
+  transition: $base-in-timing $base-in-duration;
+  opacity: 0;
+  visibility: 0;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  box-shadow: 0;
+  background: rgba(0,0,0,0);
+}
+a {
+  transform: translate3d(0,0,0);
+  transition: 150ms ease-out;
+
+  &:hover {
+    transform: translate3d(0,0,0);
+    transition: 100ms ease-in;
+  }
+}

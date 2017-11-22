@@ -1,0 +1,24 @@
+.upcomingView {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: $base-padding-y;
+   > div {
+     display: flex;
+     flex-flow: column wrap;
+     padding: 0.5rem 0;
+     border-bottom: 1px solid $secondary-background-color;
+     transition: $base-in-timing $base-in-duration;
+     &:hover {
+       border-bottom: 1px solid black;
+     }
+    h2, h3, h4 {
+      text-align: center;
+      margin:0;
+      padding: 0;
+      word-break: break-word;
+    }
+  }
+}
