@@ -1,0 +1,2 @@
+webpackJsonp([0xf927f8900006],{401:function(t,a){t.exports={data:{site:{siteMetadata:{siteUrl:"http://www.einarstefansson.com"}}},pathContext:{}}}});
+//# sourceMappingURL=path---about-af9907d83cab93d798ff.js.map
