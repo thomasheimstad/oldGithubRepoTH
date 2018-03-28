@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: master
+  accept_roles:
+    - admin
+
+publish_mode: editorial_workflow
+media_folder: "src/posts/img" # Media files will be stored in the repo under images/uploads
+collections:
+  - name: "opus" # Used in routes, e.g., /admin/collections/blog
+    label: "Opus" # Used in the UI
+    folder: "src/posts" # The path to the folder where the documents are stored
+    filter: {field: "category", value: "opus"}
+    extension: md
+    create: true
+    delete: true
+    slug: "opus{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Kategori", name: "category", widget: "hidden", default: "opus"}
+      - {label: "Publiseringsdato", name: "date", widget: "datetime"}
+      - {label: "Opusnr.", name: "title", widget: "string"}
+      - {label: "Tittel", name: "workname", widget: "string"}
+      - {label: "Komponert i år", name: "composedin", widget: "string"}
+      - {label: "Kort beskrivelse", name: "description", widget: "text"}
+      - {label: "Hovedbilde", name: "thumbnail", widget: "string"}
+      - {label: "Artister", name: "artists", widget: list, default: ['Test Testesen', 'Jack Jackson']}
+      - {label: "Instrumenter", name: "tags", widget: list, default: ['piano', 'sang']}
+      - {label: "Tekst", name: "body", widget: "markdown"}
+  - name: "artists" # Used in routes, e.g., /admin/collections/blog
+    label: "Artists" # Used in the UI
+    folder: "src/posts/artister" # The path to the folder where the documents are stored
+    filter: {field: "category", value: "artister"}
+    extension: md
+    create: true
+    delete: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Kategori", name: "category", widget: "hidden", default: "artister"}
+      - {label: "Navn", name: "title", widget: "string"}
+      - {label: "Artistfoto", name: "thumbnail", widget: "string"}
+      - {label: "Instrument", name: "tags", widget: list, default: ['piano']}
+      - {label: "Tekst", name: "body", widget: "markdown"}
